@@ -51,6 +51,7 @@
    \include{#1}
    \include{#2}
    \tableofcontents
+   \renewcommand{\addvspace}[1]{}
    \listoffigures
    \listoftables
    \include{#3}
