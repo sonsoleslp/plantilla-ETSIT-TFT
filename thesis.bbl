@@ -1,0 +1,10 @@
+\begin{thebibliography}{xxxx}
+
+\bibitem[Group~1996]{rfc1889}
+Audio-Video Transport~Working Group, H.~Schulzrinne, S.~Casner, R.~Frederick
+  and V.~Jacobson.
+\newblock {\textit{ {RTP: A Transport Protocol for Real-Time Applications}}}.
+\newblock RFC 1889 (Proposed Standard), January 1996.
+\newblock Obsoleted by RFC 3550.
+
+\end{thebibliography}
