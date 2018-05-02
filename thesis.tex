@@ -46,7 +46,7 @@
 %    numbers=left,
    numberstyle=\footnotesize,
    numbersep=9pt,
-   framesep=20pt,
+   framesep=10pt,
    xleftmargin=10pt,
    xrightmargin=10pt,
    tabsize=2,
@@ -117,15 +117,14 @@
 \renewcommand\chaptername{Anexo}  
 \renewcommand{\thechapter}{\Roman{chapter}}
 
-\noappendicestocpagenum
+% \noappendicestocpagenum
 \appendixpage
 \addappheadtotoc
 \chapter{Análisis de Impacto}
-\include{content/append-a}
+\input{content/append-a}
 % \addcontentsline{toc} {chapter}{\numberline {}Anexo I}
 \chapter{Presupuesto económico}
-
-\include{content/append-b}
+\input{content/append-b}
 % \listoftodos
 
 
@@ -136,10 +135,10 @@
 % \addcontentsline{toc} {chapter}{\numberline {}Anexo II}
 
 %\include{append-b}
-
+ 
 %\include{biblio}
-\bibliographystyle{unsrt}  
 % \bibliographystyle{thesis_style/upmthesis}
+\bibliographystyle{IEEEtran}
 \bibliography{thesis}
 \addcontentsline{toc} {chapter}{\numberline {}Bibliografía}{}
 \end{document}
