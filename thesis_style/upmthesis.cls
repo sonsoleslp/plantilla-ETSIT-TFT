@@ -226,7 +226,7 @@
       {\Large \bf \uppercase\expandafter{\@title} \par} \vskip 0pt plus 2fil
       {\Large \uppercase\expandafter{\@degree} \par} \vskip 0pt plus 3.5fil
       {\Large \expandafter{\@typeofwork} \par} \vskip 0pt plus 3fil
-      {\Large \bf \@author \par}  \vskip 0pt plus 0fil
+      {\Large \bf \uppercase\expandafter{\@author} \par}  \vskip 0pt plus 0fil
       {\large \bf \textit{\@authortitle} \par}  \vskip 0pt plus .8fil
       {\large \@city, \@country \par} \vskip 0pt plus 0fil
       {\large \@monthf, \@yearf \par}}}\cleardoublepage
