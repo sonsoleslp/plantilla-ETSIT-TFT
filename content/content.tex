@@ -1,59 +1,58 @@
-\chapter{Cap\'itulo 1: Introducción y Objetivos}
- dfldflkdldskfjgldsf \cite{morenoguerrero11}
-\begin{enumerate}
-\item  Obj1.
-\item  Obj2.
-\item  Obj3.
-\item  Obj4.
-\end{enumerate}
- 
+% 3/5 21.43
+\chapter{Introducción}
 
-\chapter{Cap\'itulo 2: Estado del arte}
-Breve intro
-\section{Tecnología 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\section{Tecnología 2}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\section{Tecnología 3}
- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
+\begin{enumerate}
+\item  Item1
+\item  Item2
+\item  Item3
+\item  Item4
+\end{enumerate}
+
+
+
+\chapter{Estado del arte}
+\section{Herramientas de...} 
+
+
+\subsection{Herramienta 1}
+
+\subsection{Conclusiones}
+
+\subsubsection{Ejemplo de gráfica y tabla}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=5.64in]{figures/heic1403b.jpg}
-\caption{Caption of the image}
+\includegraphics*[width=\textwidth]{figures/SCORM_Data_Model_API.png} 
+\caption{Uso del modelo de datos de SCORM con la API \cite{RTE2004}}
 \end{figure}
-\chapter{Cap\'itulo 3: Contexto. Proyecto}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\begin{lstlisting} 
-let a = 2;
-\end{lstlisting}
- 
-\chapter{Cap\'itulo 4: Desarrollo}
-\section{Primera parte}
-\subsection{Estudio previo}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 
-\chapter{Cap\'itulo 5: Dificultades encontradas}
-\section{Problema 1} 
-
- 
-\chapter{Cap\'itulo 6: Conclusiones}
-
-
-
+En la tabla siguiente se detalla el modelo de datos de SCORM 2004 y el significado de cada campo. Para versiones anteriores varía ligeramente, pero en esencia el modelo continúa siendo el mismo:
 \begin{table}[H]
-\centering
-\begin{tabular}{|p{1.0in}|p{3.2in}|} \hline 
-\textbf{Col1} & \textbf{Col2} \\ \hline 
-A & 1 \\ \hline 
-B & 2 \\ \hline 
-C & 3 \\ \hline 
+\begin{tabular}{|p{2.1in}|p{3.8in}|} \hline 
+\textbf{Elemento} & \textbf{Descripción} \\ \hline 
+\textbf{cmi.\_version} & Representa la versión del modelo de datos \\ \hline 
+\textbf{cmi.comments\_from\_learner } & Listado de comentarios del alumno \\ \hline 
+\textbf{cmi.comments\_from\_lms} & Comentarios procedentes del LMS \\ \hline 
+\textbf{cmi.completion\_status} & Indica si el alumno ha completado el SCO \\ \hline 
+\textbf{cmi.completion\_threshold} & Determina a partir de qué porcentaje se considera que un SCO se ha completado \\ \hline 
+\textbf{cmi.credit} & Indica si al alumno se le va a asignar una calificación a partir de su interacción con el SCO \\ \hline 
+\textbf{cmi.entry} & Determina si es la primera vez que el alumno accede al SCO \\ \hline 
+\textbf{cmi.exit} & Indica el motivo por el cual el alumno abandonó el SCO \\ \hline 
+\textbf{cmi.interactions} & Define la información pertinente a la interacción del alumno con cada actividad evaluable con el objetivo de evaluar su actuación \\ \hline 
+\textbf{cmi.launch\_data} & Datos provistos al SCO al ejecutar el curso, provenientes del manifIesto presente en el LMS \\ \hline 
+\textbf{cmi.learner\_id} & Identificador del alumno en el LMS \\ \hline 
+\textbf{cmi.learner\_name} & Nombre del alumno en el LMS \\ \hline 
+\textbf{cmi.learner\_preference} & Especifica las preferencias del alumno en cuanto al SCO \\ \hline 
+\textbf{cmi.location} & Especifica la posición actual del alumno dentro del SCO \\ \hline 
+\textbf{cmi.max\_time\_allowed} & Máximo tiempo que se permite consumir un SCO \\ \hline 
+\textbf{cmi.mode} & Identifica en qué modo se está consumiendo el curso (normal, revisión o previsualización) \\ \hline 
+\textbf{cmi.objectives} & Especifica objetivos de evaluación para un SCO \\ \hline 
+\textbf{cmi.progress\_measure} & Mide el progreso que ha realizado el alumno de cara a completar el SCO \\ \hline 
+\textbf{cmi.scaled\_passing\_score} & Puntuación que se requiere para aprobar el SCO (en formato decimal 0-1) \\ \hline 
+\textbf{cmi.score} & Especifica la puntuación del SCO para ese estudiante \\ \hline 
+\textbf{cmi.session\_time} & Cantidad de tiempo que el estudiante ha pasado en el SCO en la sesión actual \\ \hline 
+\textbf{cmi.success\_status} & Indica si el alumno ha aprobado el SCO \\ \hline 
+\textbf{cmi.suspend\_data} & Provee espacio para persistir información entre sesiones \\ \hline 
 \end{tabular}
-
-\caption[Lo que aparecerá en el listado ]{Caption text}
+\caption[Modelo de datos de SCORM]{Modelo de datos de SCORM}
 \label{table:name}
 \end{table}
-
- 
-

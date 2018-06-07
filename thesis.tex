@@ -7,22 +7,24 @@
 \usepackage{theorem,url,multirow}
 \usepackage{rotfloat,array,pifont}
 \usepackage{float}
-
-
+\usepackage{url}
+% \usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
 \usepackage[table,usenames,dvipsnames]{xcolor}
 \usepackage{lscape}
 \usepackage[perpage]{footmisc}
 \usepackage[spanish]{babel}
 \usepackage{color}
-\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{lightgray}{rgb}{.97,.97,.97}
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 \usepackage{graphicx}
 \usepackage{chngcntr}
+\usepackage{eurosym}
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
 \lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, let, for, while, do, else, case, break},
   keywordstyle=\color{blue}\bfseries,
   ndkeywords={class, export, boolean, throw, implements, import, this},
   ndkeywordstyle=\color{darkgray}\bfseries,
@@ -40,7 +42,7 @@
    language=JavaScript,
    backgroundcolor=\color{lightgray},
    extendedchars=true,
-   basicstyle=\footnotesize\ttfamily,
+   basicstyle=\scriptsize\ttfamily,
    showstringspaces=false,
    showspaces=false,
 %    numbers=left,
@@ -63,22 +65,22 @@
   \renewcommand\appendixpagename{Anexos}
   \renewcommand\appendixtocname{Anexos}
 }
-\usepackage{hyperref}
+% \usepackage{hyperref}
 \hypersetup{
     colorlinks,
     citecolor=black,
     filecolor=black,
     linkcolor=black,
     urlcolor=black,
+    breaklinks=true,
     linktoc=all
 }
-\title{Título del trabajo de fin de titulación}
+\title{Título del trabajo}
 \typeofwork{Trabajo Fin de Máster}
-% \typeofwork{Trabajo Fin de Grado}
-\author{Nombre del alumno}{Graduado en Ingeniería de Tecnologías y Servicios de Telecomunicación} % {} para TFGs
-\director{Nombre del tutor}{Doctor Ingeniero de Telecomunicación}
-% \ponente{Nombre del ponente}{Doctor Ingeniero de Telecomunicación}
-% Descomentar las lineas 249 y 250 de upmthesis.cls para añadir ponente
+\author{Nombre Apellido1 Apellido2}{Graduado en Ingeniería de Tecnologías y Servicios de Telecomunicación
+}
+\director{Nombredeltutor Apellido1 Apellido2}{Doctor Ingeniero de Telecomunicación}
+\ponente{Nombredelponente Apellido1 Apellido2}{Doctor Ingeniero de Telecomunicación}
 \donedatefront{2}{Julio}{2018} 
 \donedate{$\rule{1cm}{0.15mm}$}{$\rule{2cm}{0.15mm}$}{$\rule{1cm}{0.15mm}$} 
 \committeedate{24}{Marzo}{2012} 
@@ -87,8 +89,6 @@
 \school{Escuela Técnica Superior de Ingenieros de Telecomunicación}
 \department{Departamento de Ingeniería de Sistemas Telemáticos}
 \degree{Máster Universitario en Ingeniería de Telecomunicación}
-% \degree{Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación}
-
 \addr{Madrid}{España}
 
 \committeepresident{\hrulefill}
@@ -104,19 +104,20 @@
 \hyphenpenalty=10000
 \hbadness=10000
 \vbadness=10000
-
-\makefrontmatter{content/abstract}{content/ack}{content/acronyms}
 \setlength{\parindent}{4em}
 \setlength{\parskip}{1em}
+\makefrontmatter{content/abstract}{content/ack}{content/acronyms}
+
+
 \raggedbottom
 \include{content/content}
  
-
  
 \appendix
 \renewcommand\chaptername{Anexo}  
 \renewcommand{\thechapter}{\Roman{chapter}}
-
+\renewcommand{\thesection}{\Alph{section}} 
+\renewcommand{\thesubsection}{\alph{subsection}} 
 % \noappendicestocpagenum
 \appendixpage
 \addappheadtotoc

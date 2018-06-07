@@ -51,7 +51,7 @@
    \include{#1}
    \include{#2}
    \tableofcontents
-   \renewcommand{\addvspace}[1]{}
+    \renewcommand{\addvspace}[1]{}
    \listoffigures
    \listoftables
    \include{#3}
@@ -80,7 +80,7 @@
 \newcommand{\ie}{i.e.\ }
 \newcommand{\eg}{e.g.\ }
 \newcommand{\etal}{et al.\ }
-
+\newcommand{\code}{\texttt}
 % MARGIN DEFINITIONS
 
 %\lineskip 1pt
@@ -247,8 +247,9 @@
       {\large \bf \textit{\@authortitle} \par} \vskip 0pt plus 3fil
       {\large \bf Tutor: \@director \par} \vskip 0pt plus 0fil
       {\large \bf \textit{\@directortitle} \par} \vskip  0pt plus 1fil
-%       {\large \bf Ponente: \@ponente \par} \vskip 0pt plus 0fil
-%       {\large \bf \textit{\@directortitle} \par} \vskip  0pt plus 3fil
+      {\large \bf Ponente: \@ponente \par} \vskip 0pt plus 0fil
+      {\large \bf \textit{\@directortitle} \par} \vskip  0pt plus 3fil
+     
       {\large \@monthf, \@yearf \par}}}\cleardoublepage
 \end{titlepage}}
 
@@ -270,7 +271,7 @@
       \endgroup \vskip 0pt plus 3fil
       { Realizado el acto de defensa y lectura del TFM el d\'ia \@day~de 
   \@month~de \@year~en \@city, habiendo obtenido la calificaci\'on 
-  de $\rule{7.5cm}{0.15mm}$\par} \vskip 0pt plus 5fil
+  de \hrulefill\par} \vskip 0pt plus 5fil
       {  El presidente, {\hskip 0pt plus 3fil } El secretario, {\hskip 0pt plus 4fil} El vocal, \par} \vskip 0pt plus 5fil
       }} \cleardoublepage
 \end{titlepage}}
