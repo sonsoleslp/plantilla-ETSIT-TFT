@@ -15,6 +15,8 @@
 \usepackage[perpage]{footmisc}
 \usepackage[spanish]{babel}
 \usepackage{color}
+\usepackage{xspace}
+
 \definecolor{lightgray}{rgb}{.97,.97,.97}
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
@@ -91,6 +93,7 @@
 \degree{Máster Universitario en Ingeniería de Telecomunicación}
 \addr{Madrid}{España}
 
+
 \committeepresident{\hrulefill}
 \committeesecretary{\hrulefill}
 \committeevocala{\hrulefill}
@@ -104,10 +107,12 @@
 \hyphenpenalty=10000
 \hbadness=10000
 \vbadness=10000
-\setlength{\parindent}{4em}
+\setlength{\parindent}{3em}
 \setlength{\parskip}{1em}
-\makefrontmatter{content/abstract}{content/ack}{content/acronyms}
 
+ 
+
+\makefrontmatter{content/abstract}{content/ack}{content/acronyms}
 
 \raggedbottom
 \include{content/content}
@@ -121,7 +126,7 @@
 % \noappendicestocpagenum
 \appendixpage
 \addappheadtotoc
-\chapter{Análisis de Impacto}
+\chapter{Aspectos éticos, económicos, sociales y ambientales}
 \input{content/append-a}
 % \addcontentsline{toc} {chapter}{\numberline {}Anexo I}
 \chapter{Presupuesto económico}
@@ -139,7 +144,9 @@
  
 %\include{biblio}
 % \bibliographystyle{thesis_style/upmthesis}
+
 \bibliographystyle{IEEEtran}
+
 \bibliography{thesis}
 \addcontentsline{toc} {chapter}{\numberline {}Bibliografía}{}
 \end{document}

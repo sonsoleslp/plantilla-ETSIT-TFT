@@ -81,6 +81,8 @@
 \newcommand{\eg}{e.g.\ }
 \newcommand{\etal}{et al.\ }
 \newcommand{\code}{\texttt}
+
+
 % MARGIN DEFINITIONS
 
 %\lineskip 1pt
@@ -161,10 +163,10 @@
 \def\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
 
 \def\listoffigures{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
- \fi\chapter*{Ilustraciones\@mkboth
- {ILUSTRACIONES}{ILUSTRACIONES}} \thispagestyle{empty}
+ \fi\chapter*{Figuras\@mkboth
+ {FIGURAS}{FIGURAS}} \thispagestyle{empty}
  \addcontentsline{toc}{frontmatter}{\protect\numberline
- {\hfil}Lista de Ilustraciones}\@starttoc{lof}\if@restonecol
+ {\hfil}Lista de Figuras}\@starttoc{lof}\if@restonecol
  \twocolumn\fi}
 
 \def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
@@ -327,7 +329,7 @@
  \addcontentsline{toc}{frontmatter}{\protect\numberline
  {\hfil}Abstract}}
 
-\def\endacknowledge{\setcounter{footnote}{0}}
+% \def\endacknowledge{\setcounter{footnote}{0}}
 
 \def\resumen{\chapter*{Resumen}\thispagestyle{empty}
  \linespacing{1.2}
@@ -335,22 +337,21 @@
  \addcontentsline{toc}{frontmatter}{\protect\numberline
  {\hfil}Resumen}}
 
-\def\endacknowledge{\setcounter{footnote}{0}}
+% \def\endacknowledge{\setcounter{footnote}{0}}
 
-\def\acknowledge{\chapter*{Agradecimientos}\thispagestyle{empty}
- \linespacing{1.2}
- \setcounter{footnote}{0}
- \addcontentsline{toc}{frontmatter}{\protect\numberline
- {\hfil}Agradecimientos}}
+% \def\acknowledge{\chapter*{Agradecimientos}\thispagestyle{empty}
+%  \linespacing{1.2}
+%  \setcounter{footnote}{0}
+%  \addcontentsline{toc}{frontmatter}{\protect\numberline
+%  {\hfil}Agradecimientos}}
 
-\def\endacknowledge{\setcounter{footnote}{0}}
+% \def\endacknowledge{\setcounter{footnote}{0}}
 
-\def\acronyms{\chapter*{Acrónimos}\thispagestyle{empty}
+\def\acronyms{\chapter*{Acrónimos \@mkboth
+ {ACRÓNIMOS}{ACRÓNIMOS}}\thispagestyle{empty}
  \setcounter{footnote}{0}
  \addcontentsline{toc}{frontmatter}{\protect\numberline
  {\hfil}Lista de Acrónimos}}
-
- 
 
 \def\endacronyms{\setcounter{footnote}{0}}
 
@@ -379,6 +380,12 @@
  \def \baselinestretch{1} \parskip \z@ \parindent \z@ \par
  \null \vskip .3in \centering
  \Large \bf #1\par \endgroup \nobreak \vskip .6in\relax}
+
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{plain}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 
 \def\chapter{\cleardoublepage
  \thispagestyle{empty}
@@ -419,7 +426,7 @@
 
 \def\chaptermark#1{}
 
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 
 \def\appendix{\par
  \setcounter{chapter}{0}
@@ -464,5 +471,5 @@
 % in the upper-right.  They think that the page number at the bottom-center
 % is too close to the bottom of the page.
 %
-\let\ps@plain\ps@headings
+% \let\ps@plain\ps@headings
 
